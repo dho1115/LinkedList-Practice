@@ -29,7 +29,7 @@ class LinkedList(object):
       else: 
          scanner = self.tail; #initialize scanner to self.tail, which is Node(data, pointer). See above in add() where we set self.tail to Node(self.middle, self.tail);
 
-         while scanner.pointer != None:
+         while scanner.pointer:
             print(f"Currently scanning...", scanner.data);
             scanner = scanner.pointer; #This will give the parameters inside Node(data, pointer) new arguments because, as we can see inside add(), that self.tail = Node()
             if scanner.data.get('_id') == _id:
