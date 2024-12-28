@@ -9,6 +9,7 @@ class Node(object):
 class LinkedList(object):
    def __init__(self, head=None, middle=None, tail=None):
       """
+      Parameters:
       head: Where the newest data is added.
       middle: Where data BEFORE the addition of new data will be moved to.
       tail: Where the Node() class is that takes in self.middle & self.tail as its parameters.
