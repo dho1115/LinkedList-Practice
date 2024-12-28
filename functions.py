@@ -18,16 +18,6 @@ class LinkedList(object):
       self.tail = tail;
    
    def add(self, data):
-      '''===== Commented out Un-refactored Data. ====='''
-      # if self.tail == None:
-      #    self.tail = Node(self.middle, self.tail);
-      #    self.head = data;
-      # else:
-      #    self.middle = self.head;
-      #    self.tail = Node(self.middle, self.tail);
-      #    self.head = data;
-      '''=============================================='''
-
       if self.tail: self.middle = self.head;
 
       self.tail, self.head = Node(self.middle, self.tail), data;   
