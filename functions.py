@@ -7,7 +7,8 @@ class Node(object):
       return f"{dict(head=self.data, pointer=self.pointer)}";
 
 class LinkedList(object):
-   def __init__(self, head=None, middle=None, tail=None):
+   def __init__(self, head:any=None, middle:any=None, tail:Node=None):
+      
       """
       Parameters:
       head: Where the newest data is added.
