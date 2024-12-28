@@ -18,9 +18,16 @@ if __name__ == "__main__":
    print(MyList.id_search('Kylie311'));
 
    print("\nLength of My List:",len(MyList), end="\n\n") #List length.
-   str1 = "="*37 + " CHAIN " + "="*37;
-   str2= "="*81;
+   str1 = "="*37 + " CHAIN RESULTS!!! " + "="*37;
+   str2= "="*92;
    print(colored(str1, color='red', attrs=['bold']))
    print(MyList.ViewChain())
    print(colored(str2, color='red', attrs=['bold']))
+   print(end="\n"*3);
+   str3 = "="*25 + " FULL CHAIN (HEAD - POINTER/TAIL)!!! " + "="*25;
+   str4= "="*87;
+   print(colored(str3, color='yellow', attrs=['bold']))
+   print(MyList);
+   print(colored(str4, color='yellow', attrs=['bold']))
+
 

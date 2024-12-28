@@ -77,10 +77,10 @@ class LinkedList(object):
       try:
          if self.head == None: raise AttributeError;
       
-         chain = f"{self.head} - "
+         chain = f"{self.head} "
          tail = self.tail;
          while tail:
-            chain+= f" {tail.data}";
+            chain+= f" - {tail.data}";
             tail = tail.pointer;
          return chain;
       except AttributeError: #In case there is no head or tail.
