@@ -27,7 +27,7 @@ class LinkedList(object):
             error_message+= f"ERROR!!! Your data, {data}, MUST be of a type DICTIONARY (dict): dict(_id=str, name=str)!!!\nInstead, your data is of type, {type(data).__name__}.\n";
             raise Exception (error_message);
       
-         if not (data.get("_id") or data.get("name")):
+         if not (data.get("_id") and data.get("name")):
             error_message+= f"ERROR!!! You must have the following keys in your entry: _id and data. Your value for _id registered {data.get('_id')} and your name registered {data.get('name')}.\n"
             raise Exception (error_message)
       
