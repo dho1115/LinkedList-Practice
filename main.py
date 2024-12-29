@@ -12,7 +12,14 @@ if __name__ == "__main__":
    MyList.add(dict(_id='Jay319', name='Jay'));
    MyList.add(dict(_id='_KC191', name='K.C.'));
 
+   '''
+   ERROR TESTING.
+   '''
+   
+   print("When adding 'The quick brown fox jumped over the lazy dog...'.");
    MyList.add("The quick brown fox jumped over the lazy dog...") #Should throw an exception error.
+   print("When trying to add _Myid='_KC191', name='K.C.'");
+   MyList.add(dict(_Myid='_KC191', name='K.C.')); #Should register an exception error.
 
    # Search person profile based on _id.
    print(MyList.id_search('Kylie311'));
@@ -24,8 +31,8 @@ if __name__ == "__main__":
    print(MyList.ViewChain())
    print(colored(str2, color='red', attrs=['bold']))
    print(end="\n"*3);
-   str3 = "="*25 + " FULL CHAIN (HEAD - POINTER/TAIL)!!! " + "="*25;
-   str4= "="*87;
+   str3 = "="*25 + " FULL CHAIN (Format: HEAD - POINTER/TAIL)!!! " + "="*25;
+   str4= "="*96;
    print(colored(str3, color='yellow', attrs=['bold']))
    print(MyList);
    print(colored(str4, color='yellow', attrs=['bold']))
