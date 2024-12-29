@@ -15,7 +15,7 @@ if __name__ == "__main__":
    '''
    ERROR TESTING.
    '''
-   
+
    print("When adding 'The quick brown fox jumped over the lazy dog...'.");
    MyList.add("The quick brown fox jumped over the lazy dog...") #Should throw an exception error.
    print("When trying to add _Myid='_KC191', name='K.C.'");
@@ -23,6 +23,7 @@ if __name__ == "__main__":
 
    # Search person profile based on _id.
    print(MyList.id_search('Kylie311'));
+   print(MyList.id_search('Kylie319'));
 
    print("\nLength of My List:",len(MyList), end="\n\n") #List length.
    str1 = "="*37 + " CHAIN RESULTS!!! " + "="*37;

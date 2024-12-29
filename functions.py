@@ -47,7 +47,7 @@ class LinkedList(object):
       init();
 
       head, tail = self.head, self.tail;
-      errMessage = f"Sorry... I cannot find {_id} because:\n";
+      errMessage = f"Sorry... I cannot find {colored(f'{_id}', on_color='on_yellow', attrs=['bold'])}, probably because {colored(f'{_id} does not exist', color='red', attrs=['bold', 'underline'])}. Please see the following errorMessage below:\n";
       try:
          if (head == None) or (tail == None):
             lengtherrmsg = colored(f"{'*'*5} DID YOU CHECK THE LENGTH (len(instance name))???{'*'*5}", color='red',on_color='on_white', attrs=['bold'])
