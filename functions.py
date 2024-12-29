@@ -83,9 +83,8 @@ class LinkedList(object):
             chain+= f" - {tail.data}";
             tail = tail.pointer;
          return chain;
-      except AttributeError: #In case there is no head or tail.
-         print(AttributeError);
-         return f"You have NO CHAIN because...\nself.head is {self.head}.\nself.tail is {self.tail}!!!"
+      except AttributeError as AttErr: #In case there is no head or tail.
+         return f"You have NO CHAIN because...\nself.head returned {self.head}.\nself.tail returned {self.tail}!!! {dict(Message='AttributeError Raised.', AttributeError=AttErr)}"
    
    def __len__(self):
       return self.length;
