@@ -11,7 +11,7 @@ class LinkedList(object):
       
       """
       Parameters:
-      head: Where the newest data is added.
+      head: This is the newest data is added.
       middle: Where data BEFORE the addition of new data will be moved to.
       tail: Where the Node() class is that takes in self.middle & self.tail as its parameters.
       """
